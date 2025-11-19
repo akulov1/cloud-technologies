@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: Feedback API
+  version: 1.0.0
+servers:
+- url: https://d5defdlcab74m4n3nfi0.kf69zffa.apigw.yandexcloud.net
+paths:
+  /:
+    get:
+      x-yc-apigateway-integration:
+        type: cloud_functions
+        function_id: d4e845ejqhi60od1b1hl
+      responses:
+        "200":
+          description: OK
+    post:
+      x-yc-apigateway-integration:
+        type: cloud_functions
+        function_id: d4e845ejqhi60od1b1hl
+      responses:
+        "200":
+          description: OK
+    options:
+      x-yc-apigateway-integration:
+        type: cloud_functions
+        function_id: d4e845ejqhi60od1b1hl
+      responses:
+        "204":
+          description: No Content
